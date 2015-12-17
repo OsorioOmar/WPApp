@@ -313,4 +313,3 @@ C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\es-MX\IPAS Ap
 C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\IPAS App.dll
 C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\IPAS App.pdb
 C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\XapCacheFile.xml
-C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\IPAS App.csprojResolveAssemblyReference.cache
