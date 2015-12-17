@@ -27,7 +27,11 @@
         </Grid>
         <ScrollViewer x:Name="Text_Grid" HorizontalAlignment="Left" Margin="45,49,0,0" Grid.Row="1" VerticalAlignment="Top" Height="554" Width="387">
 
+<<<<<<< HEAD
             <RichTextBox x:Name="Main_TextRTB">
+=======
+            <RichTextBox>
+>>>>>>> c08b64f853d56f29e48bd493b69de5ca2c6881b3
             <Paragraph TextAlignment="Left" Foreground="Black">
                 <Run Text="La práctica clínica del aborto seguro" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
                 <LineBreak/>
