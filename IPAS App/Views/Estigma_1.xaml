@@ -42,35 +42,24 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <TextBlock HorizontalAlignment="Left" Height="92" Margin="0,83,0,0" TextWrapping="Wrap" Text="¿Que es el estigma por aborto?" VerticalAlignment="Top" Width="456"  Foreground="#FFEC098D" FontSize="30"/>
             <Image HorizontalAlignment="Left" Height="27" Margin="0,153,0,0" VerticalAlignment="Top" Width="456" Source="/Assets/Images/img_line_title.png"/>
-            <ScrollViewer HorizontalAlignment="Left" Height="551" Margin="0,167,0,0" VerticalAlignment="Top" Width="456">
+            <ScrollViewer HorizontalAlignment="Left" Height="551" Margin="0,167,0,0" VerticalAlignment="Top" Width="456" VerticalScrollBarVisibility="Auto">
                 <Grid HorizontalAlignment="Left" Height="2031" VerticalAlignment="Top" Width="456">
                     <TextBlock Height="88" TextWrapping="Wrap" Text="Es el atributo negativo que se le da a una mujer que busca interrumpir su embarazo y que la &quot;marca&quot; como inferior frente al ideal de ser mujer." Width="456" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="Black"/>
                     <TextBlock HorizontalAlignment="Left" Height="52" Margin="10,93,0,0" TextWrapping="Wrap" Text="Kumar, Hessini and Mitchel. Conceptualizing Abortion Stigma. Culture, Health and Sexuality. 2009)" VerticalAlignment="Top" Width="436" Foreground="Black" FontWeight="Bold" FontStyle="Italic" FontSize="16" TextAlignment="Center"/>
                     <TextBlock HorizontalAlignment="Left" Height="49" Margin="10,145,0,0" TextWrapping="Wrap" Text="Link, Bruce and Jo Phelan. 2006. On stigma and its public health implications. The Lancet, 367: 528-9." VerticalAlignment="Top" Width="430" Foreground="Black" FontWeight="Bold" FontStyle="Italic" FontSize="16" TextAlignment="Center"/>
-<<<<<<< HEAD
-                    <Rectangle HorizontalAlignment="Left" Height="84" Margin="-2,218,0,0" VerticalAlignment="Top" Width="458" Fill="#FFED1190"/>
-                    <TextBlock HorizontalAlignment="Left" Height="84" Margin="17,218,0,0" TextWrapping="Wrap" Text="Componentes que producen y mantienen el estigma" VerticalAlignment="Top" Width="426" Foreground="White" FontSize="30"/>
-=======
                     <Grid x:Name="grid2" HorizontalAlignment="Left" Height="97" Margin="2,205,-4,0" VerticalAlignment="Top" Width="458" Background="#FFEC098D">
                         <TextBlock HorizontalAlignment="Center" Margin="0,-6,0,0" TextWrapping="Wrap" Text="Componentes que producen y mantienen el estigma" Width="448" Foreground="White" FontSize="24" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold"/>
                     </Grid>
->>>>>>> c08b64f853d56f29e48bd493b69de5ca2c6881b3
                     <Image HorizontalAlignment="Left" Height="294" Margin="17,320,0,0" VerticalAlignment="Top" Width="408" Source="/Assets/Images/img_diagram_estigma.png"/>
                     <TextBlock HorizontalAlignment="Left" Height="114" Margin="8,625,0,0" TextWrapping="Wrap" Text="Existen algunos componentes en las relaciones sociales que interactúan para producir y mantener el estigma hacia las mujeres que abortan:" VerticalAlignment="Top" Width="421" Foreground="Black"/>
                     <TextBlock HorizontalAlignment="Left" Height="87" Margin="8,739,0,0" TextWrapping="Wrap" Text="1. Etiquetas: La gente identifica y coloca etiquetas que catalogan a las mujeres que abortan." VerticalAlignment="Top" Width="434" Foreground="Black"/>
                     <TextBlock HorizontalAlignment="Left" Height="87" Margin="8,826,0,0" TextWrapping="Wrap" Text="2. Estereotipos: A las personas que se etiquetan se les asocia con caracteristicas indeseables: estereotipo negativo." VerticalAlignment="Top" Width="434" Foreground="Black"/>
                     <TextBlock HorizontalAlignment="Left" Height="87" Margin="8,913,0,0" TextWrapping="Wrap" Text="3. Separación: A las personas que son ubicadas con ese estereotipo negativo se les separa del resto de las personas." VerticalAlignment="Top" Width="434" Foreground="Black"/>
                     <TextBlock HorizontalAlignment="Left" Height="90" Margin="8,1005,0,0" TextWrapping="Wrap" Text="4. Discriminación: Las personas etiquetadas con esos atributos negativos sufren pérdida de estatus,rechazo,exclusión y discriminación." VerticalAlignment="Top" Width="434" Foreground="Black"/>
-<<<<<<< HEAD
-                    <Rectangle HorizontalAlignment="Left" Height="120" Margin="-2,1113,0,0" VerticalAlignment="Top" Width="462" Fill="#FFED1190"/>
-                    <TextBlock HorizontalAlignment="Left" Height="158" TextWrapping="Wrap" Text="El estigma hacia el aborto se genera y dirige a distintos grupos sociales:" VerticalAlignment="Top" Width="426"  Foreground="White" FontSize="30" Margin="17,1113,0,0"/>
-                    <ScrollViewer HorizontalAlignment="Left" Height="383" Margin="-6,1287,0,0" VerticalAlignment="Top" Width="449" Foreground="{x:Null}" HorizontalScrollBarVisibility="Auto">
-=======
                     <Grid x:Name="grid3" HorizontalAlignment="Left" Height="91" Margin="-1,1125,0,0" VerticalAlignment="Top" Width="454" Background="#FFEC098D">
                         <TextBlock HorizontalAlignment="Left" Height="85" TextWrapping="Wrap" Text="El estigma hacia el aborto se genera y dirige a distintos grupos sociales:" VerticalAlignment="Top" Width="426"  Foreground="White" FontSize="24" Margin="10,10,0,0" TextAlignment="Center" FontWeight="Bold"/>
                     </Grid>
-                    <ScrollViewer HorizontalAlignment="Left" Height="383" Margin="-6,1287,0,0" VerticalAlignment="Top" Width="449" Foreground="{x:Null}" HorizontalScrollBarVisibility="Auto" ManipulationMode="Control">
->>>>>>> c08b64f853d56f29e48bd493b69de5ca2c6881b3
+                    <ScrollViewer HorizontalAlignment="Left" Height="383" Margin="-6,1287,0,0" VerticalAlignment="Top" Width="449" Foreground="{x:Null}" HorizontalScrollBarVisibility="Auto" ManipulationMode="Control" VerticalScrollBarVisibility="Disabled">
                         <Image HorizontalAlignment="Left" Height="383" VerticalAlignment="Top" Width="669" Source="/Assets/Images/estigma_imagen.png" Stretch="UniformToFill"/>
                     </ScrollViewer>
                 </Grid>

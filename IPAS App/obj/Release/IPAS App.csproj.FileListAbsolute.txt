@@ -313,8 +313,6 @@ C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\es-MX\IPAS Ap
 C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\IPAS App.dll
 C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\IPAS App.pdb
 C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\XapCacheFile.xml
-<<<<<<< HEAD
-=======
 D:\Usuario\Bibliotecas Alex\WPApp-master\WPApp-master\IPAS App\Bin\Release\Assets\ApplicationIcon.png
 D:\Usuario\Bibliotecas Alex\WPApp-master\WPApp-master\IPAS App\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png
 D:\Usuario\Bibliotecas Alex\WPApp-master\WPApp-master\IPAS App\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png
@@ -472,4 +470,5 @@ D:\Usuario\Bibliotecas Alex\WPApp-master\WPApp-master\IPAS App\obj\Release\es-MX
 D:\Usuario\Bibliotecas Alex\WPApp-master\WPApp-master\IPAS App\obj\Release\IPAS App.dll
 D:\Usuario\Bibliotecas Alex\WPApp-master\WPApp-master\IPAS App\obj\Release\IPAS App.pdb
 D:\Usuario\Bibliotecas Alex\WPApp-master\WPApp-master\IPAS App\obj\Release\XapCacheFile.xml
->>>>>>> c08b64f853d56f29e48bd493b69de5ca2c6881b3
+D:\Usuario\Bibliotecas Alex\WPApp-master\WPApp-master\IPAS App\obj\Release\IPAS App.csprojResolveAssemblyReference.cache
+C:\Users\Omar\Documents\GitHub\IPAS App\WPApp\IPAS App\obj\Release\IPAS App.csprojResolveAssemblyReference.cache
