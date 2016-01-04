@@ -30,5 +30,21 @@ namespace IPAS_App
 
             this.NavigationService.Navigate(new Uri("/Tec_Recomendadas/Principal_Tec_Recomendadas.xaml", UriKind.RelativeOrAbsolute));
         }
+
+        private void ZoomInBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (RTB1.FontSize <= 23)
+            {
+                RTB1.FontSize += 1;
+            }
+        }
+
+        private void ZoomOutBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (RTB1.FontSize >= 18)
+            {
+                RTB1.FontSize -= 1;
+            }
+        }
     }
 }

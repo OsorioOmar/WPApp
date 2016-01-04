@@ -349,6 +349,8 @@
     <Content Include="Images\ic_tlahuac.png" />
     <Content Include="Images\ic_universidad.png" />
     <Resource Include="Images\im_banner_test.png" />
+    <Resource Include="Images\img_table_abort_m_res.png" />
+    <Resource Include="Images\img_table_abort_q_res.png" />
     <Content Include="Images\im_btn_menu_index1.png" />
     <Resource Include="Images\im_woman15.png" />
     <Resource Include="Images\im_woman17.png" />
@@ -408,8 +410,10 @@
     <Resource Include="Images\ic_ipas_white.png" />
     <Resource Include="Images\ic_logo_mujer_orange.png" />
     <Resource Include="Images\img_line_title.png" />
-    <Resource Include="Images\img_table_abort_m.png" />
-    <Resource Include="Images\img_table_abort_q.png" />
+    <Content Include="Images\img_table_abort_m.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img_table_abort_q.png" />
     <Resource Include="Images\img_table_antibiotic.png" />
     <Resource Include="Images\img_table_g10_g13.png" />
     <Resource Include="Images\img_table_g13.png" />

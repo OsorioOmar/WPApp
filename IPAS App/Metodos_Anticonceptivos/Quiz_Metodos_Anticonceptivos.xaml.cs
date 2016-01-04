@@ -119,6 +119,26 @@ namespace IPAS_App
             AnswersContent.Text = sb.ToString();
             showPopUp();
         }
+		
+		private void ZoomInBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (RTB1.FontSize <= 23)
+            {
+                RTB1.FontSize += 1;
+				RTB2.FontSize += 1;
+				RTB3.FontSize += 1;
+            }
+        }
+
+        private void ZoomOutBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (RTB1.FontSize >= 18)
+            {
+                RTB1.FontSize -= 1;
+				RTB2.FontSize -= 1;
+				RTB3.FontSize -= 1;
+            }
+        }
 
     }
 }

@@ -37,7 +37,7 @@
 
                         <StackPanel>
 
-                            <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                            <RichTextBox x:Name="RTB1" FontSize="21" Margin="0,0,-18,0" Width="432">
 
                                 <Paragraph TextAlignment="Center" Foreground="Black">
                                     <Run Text="Mujer de 41 años G3 P1 A2" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
@@ -52,7 +52,7 @@
                                 </Paragraph>
 
                                 <Paragraph TextAlignment="Left" Foreground="Black">
-                                    <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Diagnóstico de ingreso:</Run>
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Diagnóstico de ingreso:</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Run Text="Huevo muerto retenido y antecedente de portar Válvula cardiaca mecánica."/>
@@ -64,7 +64,7 @@
                                     <Run Text="Entre sus antecedentes relevantes: Diagnóstico de Fiebre reumatoide a los 22 años de edad. Cirugía para colocación de válvula mecánica a los 37 años y desde esa edad tratamiento con Aspirina 100 mg /día. Último PAP hace 6 meses y resultado negativo a LIE. Niega otro antecedente."/>
                                     <LineBreak/>
                                     <LineBreak/>
-                                    <Run Text="Ella refiere estar interesada en los siguientes métodos; de estos ¿cuál es el método más indicado para ella?"/>
+                                    <Run Text="Ella refiere estar interesada en los siguientes métodos, ¿cuál es el método más indicado?"/>
                                     <LineBreak/>
                                     <LineBreak/>
                                 </Paragraph>
@@ -85,7 +85,7 @@
                     <ScrollViewer x:Name="Text_Grid_2" HorizontalAlignment="Left" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="554" Width="432">
 
                         <StackPanel>
-                            <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                            <RichTextBox x:Name="RTB2" FontSize="21" Margin="0,0,-18,0" Width="432">
 
                                 <Paragraph TextAlignment="Center" Foreground="Black">
                                     <Run Text="Mujer de 35 años G2 P1 A1" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
@@ -100,7 +100,7 @@
                                 </Paragraph>
 
                                 <Paragraph TextAlignment="Left" Foreground="Black">
-                                    <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Diagnóstico de ingreso:</Run>
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Diagnóstico de ingreso:</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Run>Aborto incompleto séptico y Obesidad grado I (IMC 30 kg/m2).</Run>
@@ -110,7 +110,7 @@
                 Entre sus antecedentes relevantes refiere tabaquismo desde hace 6 años a razón de 16 cigarrillos /día.  Nunca PAP y con uso inconsistente de preservativo.</Run>
                                     <LineBreak/>
                                     <LineBreak/>
-                                    <Run>Se le orienta sobre métodos anticonceptivos  de los cuales ella refiere estar interesada en  los que se enuncian a continuación; de estos , ¿cuál es el método no recomendado para ella?</Run>
+                                    <Run>Se le orienta sobre métodos anticonceptivos  de los cuales ella refiere estar interesada en  los que se enuncian a continuación, ¿cuál es el método no recomendado?</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                 </Paragraph>
@@ -133,7 +133,7 @@
                     <ScrollViewer x:Name="Text_Grid1" HorizontalAlignment="Left" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="554" Width="432">
 
                         <StackPanel>
-                            <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                            <RichTextBox x:Name="RTB3" FontSize="21" Margin="0,0,-18,0" Width="432">
 
                                 <Paragraph TextAlignment="Center" Foreground="Black">
                                     <Run Text="Mujer de 18 años G1 P0" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
@@ -148,7 +148,7 @@
                                 </Paragraph>
 
                                 <Paragraph TextAlignment="Left" Foreground="Black">
-                                    <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Diagnóstico de ingreso:</Run>
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Diagnóstico de ingreso:</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Run>Embarazo de 7 semanas</Run>
@@ -164,7 +164,7 @@
                                     <Run>Ahora acude  a su centro de salud solicitando interrupción legal del embarazo.</Run>
                                     <LineBreak/>
                                     <LineBreak/>
-                                    <Run>Posterior a la información y consejería ella elige la interrupción con el régimen combinado y  refiere estar interesada en  los  siguientes métodos; de estos ¿cuál es el método más indicado para ella?</Run>
+                                    <Run>Posterior a la información y consejería ella elige la interrupción con el régimen combinado y  refiere estar interesada en  los  siguientes métodos, ¿cuál es el método más indicado?</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                 </Paragraph>
@@ -193,8 +193,10 @@
                     <ImageBrush Stretch="Fill" ImageSource="/IPAS App;component/Images/pleca.png"/>
                 </HyperlinkButton.Background>
             </HyperlinkButton>
+            <Button x:Name="ZoomInBtn" Content="A+" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Style="{StaticResource ButtonPressedPink}" Click="ZoomInBtn_Click"/>
+            <Button x:Name="ZoomOutBtn" Content="a-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Margin="81,1,0,-1" Width="80" Style="{StaticResource ButtonPressedPink}" Click="ZoomOutBtn_Click"/>
         </Grid>
-        <Grid x:Name="blackGrid" HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="480" Background="Black" Grid.RowSpan="2" Opacity="0.445" Margin="0,-39,0,0"/>
+        <Grid x:Name="blackGrid" HorizontalAlignment="Left" Height="839" VerticalAlignment="Top" Width="480" Background="Black" Grid.RowSpan="2" Opacity="0.445" Margin="0,-39,0,0"/>
         <Grid x:Name="whiteGrid" HorizontalAlignment="Center" Height="694" VerticalAlignment="Center" Width="456" Background="White" Margin="12,49,12,57" Grid.RowSpan="2">
             <Button x:Name="PopCloseButton" Content="X" HorizontalAlignment="Left" Margin="376,10,0,0" VerticalAlignment="Top" BorderBrush="White" Foreground="Black" Width="70" Height="70" Style="{StaticResource ButtonPressedPink}" Click="PopCloseButton_Click"/>
             <Grid Margin="35,80,35,33">

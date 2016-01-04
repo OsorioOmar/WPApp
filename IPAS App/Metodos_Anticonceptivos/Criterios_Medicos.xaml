@@ -33,7 +33,7 @@
                     <ScrollViewer x:Name="Text_Grid" HorizontalAlignment="Left" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="544" Width="432">
 
 
-                        <RichTextBox FontSize="16" Width="432" Height="541">
+                        <RichTextBox x:Name="RTB1" FontSize="21" Width="432">
                             <Paragraph TextAlignment="Left" Foreground="Black">
                                 <Run Text="Post aborto" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
                                 <LineBreak/>
@@ -45,7 +45,7 @@
                             </Paragraph>
 
                             <Paragraph TextAlignment="Left" Foreground="Black">
-                                <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Instrucciones de uso</Run>
+                                <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Instrucciones de uso</Run>
                                 <LineBreak/>
                                 <LineBreak/>
                                 <Run>1. Si la mujer tiene relaciones sexuales sin usar un método anticonceptivo moderno, puede quedar embarazada tan pronto como una semana después de interrumpir el embarazo.</Run>
@@ -68,7 +68,7 @@
                     <ScrollViewer x:Name="Text_Grid_2" HorizontalAlignment="Left" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="554" Width="432">
 
 
-                        <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                        <RichTextBox  x:Name="RTB2" FontSize="21" Margin="0,0,-18,0" Width="432">
                             <Paragraph TextAlignment="Left" Foreground="Black">
                                 <Run Text="Post aborto en el 1er trimestre" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
                                 <LineBreak/>
@@ -82,7 +82,7 @@
                             <Paragraph TextAlignment="Left" Foreground="Black">
                                 <LineBreak/>
                                 <LineBreak/>
-                                <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Inicio del uso de anticonceptivo</Run>
+                                <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Inicio del uso de anticonceptivo</Run>
                                 <LineBreak/>
                                 <LineBreak/>
                                 <Run>El Dispositivo Intrauterino (DIU) puede insertarse inmediatamente después de la Aspiración Endouterina.</Run>
@@ -142,7 +142,7 @@
                     <ScrollViewer x:Name="Text_Grid1" HorizontalAlignment="Left" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="554" Width="432">
 
 
-                        <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                        <RichTextBox  x:Name="RTB3"  FontSize="21" Margin="0,0,-18,0" Width="432">
                             <Paragraph TextAlignment="Left" Foreground="Black">
                                 <Run Text="Post aborto en el 2do trimestre" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
                                 <LineBreak/>
@@ -175,7 +175,7 @@
                     <ScrollViewer x:Name="Text_Grid2" HorizontalAlignment="Left" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="554" Width="432">
 
 
-                        <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                        <RichTextBox  x:Name="RTB4"  FontSize="21" Margin="0,0,-18,0" Width="432">
                             <Paragraph TextAlignment="Left" Foreground="Black">
                                 <Run Text="Situaciones Especiales" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
                                 <LineBreak/>
@@ -223,11 +223,13 @@
 
         </Grid>
         <Grid x:Name="BreadCrumb_Grid" Grid.Row="1" Background="#FFEC098D" Height="80" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0" Width="480">
-            <Button x:Name="button4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="402,0,0,0" BorderThickness="3" Height="80" Width="77" Style="{StaticResource ButtonPressedPink}" Click="button4_Click"/>
-            <Button x:Name="button3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,0,0,0" BorderThickness="3" Height="80" Width="77" Style="{StaticResource ButtonPressedPink}" Click="button3_Click"/>
-            <Button x:Name="button2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="244,0,0,0" BorderThickness="3" Height="80" Width="77" Style="{StaticResource ButtonPressedPink}" Click="button2_Click"/>
-            <Button x:Name="button1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="165,0,0,0" BorderThickness="3" Height="80" Width="77" Style="{StaticResource ButtonPressedPink}" Click="button1_Click"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Categorias:" VerticalAlignment="Top" Margin="61,25,0,0"/>
+            <Button x:Name="button4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="412,6,0,0" BorderThickness="3" Height="70" Width="67" Style="{StaticResource ButtonPressedPink}" Click="button4_Click"/>
+            <Button x:Name="button3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="343,6,0,0" BorderThickness="3" Height="70" Width="67" Style="{StaticResource ButtonPressedPink}" Click="button3_Click"/>
+            <Button x:Name="button2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="274,6,0,0" BorderThickness="3" Height="70" Width="67" Style="{StaticResource ButtonPressedPink}" Click="button2_Click"/>
+            <Button x:Name="button1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="204,7,0,0" BorderThickness="3" Height="70" Width="67" Style="{StaticResource ButtonPressedPink}" Click="button1_Click"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Categorias:" VerticalAlignment="Top" Margin="134,31,0,0" FontSize="14.667" FontWeight="Bold"/>
+            <Button x:Name="ZoomInBtn" Content="A+" HorizontalAlignment="Left" VerticalAlignment="Top" Height="70" Style="{StaticResource ButtonPressedPink}" Click="ZoomInBtn_Click" Margin="-2,7,0,0" Width="68" FontSize="14"/>
+            <Button x:Name="ZoomOutBtn" Content="a-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="70" Width="64" Style="{StaticResource ButtonPressedPink}" Click="ZoomOutBtn_Click" Margin="66,7,0,0" FontSize="14"/>
         </Grid>
         <Grid x:Name="blackGrid" HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="480" Background="Black" Grid.RowSpan="2" Opacity="0.445"/>
         <Grid x:Name="whiteGrid" HorizontalAlignment="Center" Height="539" VerticalAlignment="Center" Width="400" Background="White" Margin="40,31,40,150" Grid.Row="1">

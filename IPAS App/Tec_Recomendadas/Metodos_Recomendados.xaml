@@ -31,12 +31,11 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
         	<phone:Pivot HorizontalAlignment="Left" Height="Auto" Title="Métodos Recomendados para el Aborto Seguro" VerticalAlignment="Top" Width="456" Foreground="#FFEC098D" Style="{StaticResource PivotHeaderStyle}">
         					
-				<phone:PivotItem CacheMode="{x:Null}" Header="Aborto con Medicamentos" Foreground="Black" FontSize="16"  >
+				<phone:PivotItem CacheMode="{x:Null}" Header="Aborto con Medicamentos" Foreground="Black"  >
         			<ScrollViewer x:Name="Text_Grid" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Left" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="543" Width="432">
 
                         <StackPanel>
-                            <RichTextBox Height="Auto" FontSize="16" Margin="0,0,0
-                                     ,0" Width="432">
+                            <RichTextBox x:Name="RTB5"  Height="Auto" FontSize="21" Margin="0,0,0,0" Width="432">
         					<Paragraph TextAlignment="Center" Foreground="Black">
         						<InlineUIContainer >
         							<Image HorizontalAlignment="Left"
@@ -45,7 +44,7 @@
         						</InlineUIContainer>
 								<LineBreak/>
 								<LineBreak/>
-								<Run FontStyle="Normal" FontSize="20" FontWeight="Bold" Foreground="#FFEC098D"> Mifepristona y misoprostol</Run>
+								<Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D"> Mifepristona y misoprostol</Run>
 								<LineBreak/>
 								<LineBreak/>
 								<Run>Hasta la semana 10 de gestación</Run>
@@ -74,7 +73,7 @@
         								Stretch="Uniform" VerticalAlignment="Top" Source="/IPAS App;component/Images/medicine.png" Width="357" />
         						</InlineUIContainer>
 								<LineBreak/>
-								<Run FontStyle="Normal" FontSize="20" FontWeight="Bold" Foreground="#FFEC098D">Misoprostol solo</Run>
+								<Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Misoprostol solo</Run>
 								<LineBreak/>
 								<LineBreak/>
 								<Run>Hasta la semana 13 de gestación:</Run>
@@ -90,14 +89,14 @@
 								<LineBreak/>
 								<InlineUIContainer>
 									<Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-        								<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+        								<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Características de las diferentes vías de administración del misoprostol
 										</TextBlock>
 									</Grid>
 								</InlineUIContainer>
 								<LineBreak/>
 								<LineBreak/>
-								<Run FontStyle="Normal" FontSize="20" FontWeight="Bold" Foreground="#FFEC098D">Bucal</Run>
+								<Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Bucal</Run>
 								<LineBreak/>
 								<LineBreak/>
 								<InlineUIContainer >
@@ -110,13 +109,13 @@
 							</Paragraph>
 							
 							<Paragraph TextAlignment="Left" Foreground="Black">
-								<Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Instrucciones de uso</Run>
+								<Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Instrucciones de uso</Run>
 								<LineBreak/>
 								<LineBreak/>
 								<Run>Las pastillas se colocan entre la mejilla y la encía y se tragan después de 30 minutos.</Run>
 								<LineBreak/>
 								<LineBreak/>
-								<Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Notas</Run>
+								<Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Notas</Run>
 								<LineBreak/>
 								<LineBreak/>
 								<Run>- Esta vía alcanza concentraciones terapéuticas de medicamento en sangre que se mantienen por un periodo bastante prolongado.</Run>
@@ -126,55 +125,53 @@
 								<LineBreak/>
 							</Paragraph>
 
-							<Paragraph TextAlignment="Center">
-                                <Run FontStyle="Normal" FontSize="20" FontWeight="Bold" Foreground="#FFEC098D">Sublingual</Run>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <InlineUIContainer >
-                                    <Image HorizontalAlignment="Left"
+                        </RichTextBox>
+                            <RichTextBox x:Name="RTB6" Height="Auto" FontSize="21" Margin="0,0,0,0" Width="432">
+                                <Paragraph TextAlignment="Center">
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Sublingual</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <InlineUIContainer >
+                                        <Image HorizontalAlignment="Left"
         								Margin="0" x:Name="sublingual"
         								Stretch="Uniform" VerticalAlignment="Top" Source="/IPAS App;component/Images/sublingual.png" Width="357" />
-                                </InlineUIContainer>
-                                <LineBreak/>
-                                <LineBreak/>
-                            </Paragraph>
-
-                            <Paragraph TextAlignment="Left" Foreground="Black">
-                                <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Instrucciones de uso</Run>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <Run>Las pastillas se colocan debajo de la lengua y se tragan después de 30 minutos.</Run>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Notas</Run>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <Run>- Esta vía alcanza rápidamente altas concentraciones terapéuticas de medicamento en sangre; pero estas se mantienen por un periodo  más corto.</Run>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <Run>- Causa más fiebre, escalofrío, diarrea y vómito que la ruta vaginal.</Run>
-                                <LineBreak/>
-                                <LineBreak/>
-                            </Paragraph>
-
-                        </RichTextBox>
-
-                            <RichTextBox  Height="Auto" FontSize="16" Margin="0,0,0
-                                     ,0" Width="432">
-                                <Paragraph TextAlignment="Center">
-                                    <Run FontStyle="Normal" FontSize="20" FontWeight="Bold" Foreground="#FFEC098D">Vaginal</Run>
+                                    </InlineUIContainer>
                                     <LineBreak/>
                                     <LineBreak/>
                                 </Paragraph>
 
                                 <Paragraph TextAlignment="Left" Foreground="Black">
-                                    <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Instrucciones de uso</Run>
+                                    <Run FontStyle="Normal"  FontWeight="Bold" Foreground="#FFEC098D">Instrucciones de uso</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Run>Las pastillas se colocan debajo de la lengua y se tragan después de 30 minutos.</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Notas</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Run>- Esta vía alcanza rápidamente altas concentraciones terapéuticas de medicamento en sangre; pero estas se mantienen por un periodo  más corto.</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Run>- Causa más fiebre, escalofrío, diarrea y vómito que la ruta vaginal.</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+
+                                <Paragraph TextAlignment="Center">
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Vaginal</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+
+                                <Paragraph TextAlignment="Left" Foreground="Black">
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Instrucciones de uso</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Run>Las pastillas se colocan en el fondo del saco vaginal (la porción más profunda de la vagina) y se le pide a la mujer recostarse por 30 minutos.</Run>
                                     <LineBreak/>
                                     <LineBreak/>
-                                    <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Notas</Run>
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Notas</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Run>- Esta vía alcanza más lentamente las concentraciones terapéuticas del medicamento en sangre y éstas se mantienen por un periodo más largo.</Run>
@@ -190,11 +187,16 @@
                                     <LineBreak/>
                                     <LineBreak/>
                                 </Paragraph>
+                                
+                                
+                            </RichTextBox>
+                            <RichTextBox x:Name="RTB7"  Height="Auto" FontSize="21" Margin="0,0,0,0" Width="432">
+                                
 
                                 <Paragraph TextAlignment="Center">
                                     <InlineUIContainer>
                                         <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Seguimiento
                                             </TextBlock>
                                         </Grid>
@@ -219,7 +221,7 @@
                                     <Run>d) Reforzar la consejería para iniciar o continuar con el uso de un método anticonceptivo.</Run>
                                     <LineBreak/>
                                     <LineBreak/>
-                                    <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Misoprostol solol</Run>
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Misoprostol solo</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Run>- Este régimen combinado es muy eficaz (más del 95% de efectividad), por lo tanto no existe necesidad de un seguimiento obligatorio de rutina.</Run>
@@ -228,7 +230,7 @@
                                     <Run>-  Las mujeres pueden tener una visita de seguimiento si así lo desean, entre los 7 a 14 días siguientes a la ingesta de los medicamentos.</Run>
                                     <LineBreak/>
                                     <LineBreak/>
-                                    <Run FontStyle="Normal" FontSize="18" FontWeight="Bold" Foreground="#FFEC098D">Mifepristona y misoprostol</Run>
+                                    <Run FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D">Mifepristona y misoprostol</Run>
                                     <LineBreak/>
                                     <LineBreak/>
                                     <Run>- Este régimen es menos eficaz que el régimen combinado  (75-85% de efectividad), por lo que se recomienda el seguimiento para asegurar que el aborto se ha completado.</Run>
@@ -242,7 +244,7 @@
                                 <Paragraph TextAlignment="Center">
                                     <InlineUIContainer>
                                         <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Manejo del dolor en aborto con medicamentos del 1er trimestre
                                             </TextBlock>
                                         </Grid>
@@ -250,6 +252,9 @@
                                     <LineBreak/>
                                     <LineBreak/>
                                 </Paragraph>
+
+                            </RichTextBox>
+                            <RichTextBox x:Name="RTB8"  Height="Auto" FontSize="21" Margin="0,0,0,0" Width="432">
 
                                 <Paragraph TextAlignment="Left" Foreground="Black">
                                     <Run FontWeight="Bold">Recomendación:</Run>
@@ -279,14 +284,12 @@
                                     <InlineUIContainer >
                                         <Image HorizontalAlignment="Left"
         								Margin="0" x:Name="img_table_abort_m"
-        								Stretch="Uniform" VerticalAlignment="Top" Source="/IPAS App;component/Images/img_table_abort_m.png" Width="357" />
+        								Stretch="Uniform" VerticalAlignment="Top" Source="/IPAS App;component/Images/img_table_abort_m_res.png" Width="357" Tap="img_table_antibiotic_Tap" Tag="/Images/img_table_abort_m.png" />
                                     </InlineUIContainer>
                                     <LineBreak/>
                                     <LineBreak/>
                                 </Paragraph>
-
                             </RichTextBox>
-
                         </StackPanel>
 
                     </ScrollViewer>
@@ -296,7 +299,7 @@
         			<ScrollViewer x:Name="Text_Grid_2" HorizontalAlignment="Left" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="554" Width="432">
 
                         <StackPanel>
-                            <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                            <RichTextBox x:Name="RTB1"  FontSize="21" Margin="0,0,-18,0" Width="432">
         					<Paragraph TextAlignment="Center" Foreground="Black">
 								<InlineUIContainer >
         							<Image HorizontalAlignment="Left"
@@ -319,7 +322,7 @@
 								<Paragraph TextAlignment="Center" Foreground="Black">
 								<InlineUIContainer>
 									<Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100" HorizontalAlignment="Center">
-        								<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+        								<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Descripción
 										</TextBlock>
 									</Grid>
@@ -349,7 +352,7 @@
                             <Paragraph TextAlignment="Center">
                                 <InlineUIContainer>
                                     <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Procedimiento
                                         </TextBlock>
                                     </Grid>
@@ -392,34 +395,36 @@
                                 </InlineUIContainer>
                             </Paragraph>
 
-                            <Paragraph TextAlignment="Center">
-                                <InlineUIContainer>
-                                    <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
-										Tasas de eficacia y complicaciones en el 1er trimestre
-                                        </TextBlock>
-                                    </Grid>
-                                </InlineUIContainer>
-                                <LineBreak/>
-                                <LineBreak/>
-                            </Paragraph>
-
-                            <Paragraph TextAlignment="Left" Foreground="Black">
-                                <Run FontWeight="Bold" >Resumen de la evidencia:</Run>
-                                <LineBreak/>
-                                <LineBreak/>
-                                <Run>La aspiración por vacío es  eficaz y segura,  con tasas de eficacia de más del 98% y tasas de complicaciones  de menos del 2%.  Rara vez ocurren eventos adversos serios durante la aspiración por vacío en el primer trimestre.</Run>
-                                <LineBreak/>
-                                <LineBreak/>
-                            </Paragraph>
+                            
 
                         </RichTextBox>
+                            <RichTextBox x:Name="RTB2" FontSize="21" Margin="0,0,-18,0" Width="432">
+                                <Paragraph TextAlignment="Center">
+                                    <InlineUIContainer>
+                                        <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
+                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
+										Tasas de eficacia y complicaciones en el 1er trimestre
+                                            </TextBlock>
+                                        </Grid>
+                                    </InlineUIContainer>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
 
-                            <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                                <Paragraph TextAlignment="Left" Foreground="Black">
+                                    <Run FontWeight="Bold" >Resumen de la evidencia:</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <Run>La aspiración por vacío es  eficaz y segura,  con tasas de eficacia de más del 98% y tasas de complicaciones  de menos del 2%.  Rara vez ocurren eventos adversos serios durante la aspiración por vacío en el primer trimestre.</Run>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                </Paragraph>
+                            </RichTextBox>
+                            <RichTextBox x:Name="RTB3" FontSize="21" Margin="0,0,-18,0" Width="432">
                             <Paragraph TextAlignment="Center">
                                 <InlineUIContainer>
                                     <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Ventajas de la aspiración por vacío en el 1er trimestre
                                         </TextBlock>
                                     </Grid>
@@ -463,7 +468,7 @@
                             <Paragraph TextAlignment="Center">
                                 <InlineUIContainer>
                                     <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Preparación cervical en el 1er trimestre
                                         </TextBlock>
                                     </Grid>
@@ -492,7 +497,7 @@
                             <Paragraph TextAlignment="Center">
                                 <InlineUIContainer>
                                     <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+                                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Manejo del dolor en aborto quirúrgico del 1er trimestre
                                         </TextBlock>
                                     </Grid>
@@ -517,15 +522,14 @@
                                 <InlineUIContainer >
                                     <Image HorizontalAlignment="Left"
         								Margin="0" x:Name="img_table_abort_q"
-        								Stretch="Uniform" VerticalAlignment="Top" Source="/IPAS App;component/Images/img_table_abort_q.png" Width="357" />
+        								Stretch="Uniform" VerticalAlignment="Top" Source="/IPAS App;component/Images/img_table_abort_q_res.png" Width="357" Tap="img_table_antibiotic_Tap" Tag="/Images/img_table_abort_q.png"/>
                                 </InlineUIContainer>
                                 <LineBreak/>
                                 <LineBreak/>
                             </Paragraph>
 
                         </RichTextBox>
-
-                            <RichTextBox FontSize="16" Margin="0,0,-18,0" Width="432">
+                            <RichTextBox x:Name="RTB4" FontSize="21" Margin="0,0,-18,0" Width="432">
 
                                 <Paragraph TextAlignment="Left" Foreground="Black">
                                     <Run>El paracetamol no es efectivo para aliviar el dolor durante el aborto.</Run>
@@ -545,7 +549,7 @@
                                 <Paragraph TextAlignment="Center">
                                     <InlineUIContainer>
                                         <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Anestesia Paracervical en el 1er trimestre
                                             </TextBlock>
                                         </Grid>
@@ -581,10 +585,13 @@
                                     </InlineUIContainer>
                                 </Paragraph>
 
+                                
+                            </RichTextBox>
+                            <RichTextBox x:Name="RTB9" FontSize="21" Margin="0,0,-18,0" Width="432">
                                 <Paragraph TextAlignment="Center">
                                     <InlineUIContainer>
                                         <Grid Background="#FFEC098D" Width="357" Margin="0" Grid.Row="1" Height="100">
-                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Width="357" TextAlignment="Center">
+                                            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" Width="357" TextAlignment="Center">
 										Profilaxis antibiótica en el 1er trimestre
                                             </TextBlock>
                                         </Grid>
@@ -619,12 +626,11 @@
                                     <LineBreak/>
                                     <Run>Para mayor información consultar: “Actualizaciones clínicas en salud reproductiva”, Ipas. Enero 2015, pág. 17.</Run>
                                     <LineBreak/>
-									<Hyperlink  Foreground="Blue" Click="HyperlinkButton_Click3">http://ipasmexico.org/act-clinicas.html</Hyperlink>
+                                    <Hyperlink  Foreground="Blue" Click="HyperlinkButton_Click3">http://ipasmexico.org/act-clinicas.html</Hyperlink>
                                     <LineBreak/>
                                     <LineBreak/>
                                 </Paragraph>
                             </RichTextBox>
-                        
                         </StackPanel>
 
                     </ScrollViewer>
@@ -640,6 +646,14 @@
                     <ImageBrush Stretch="Fill" ImageSource="/IPAS App;component/Images/pleca.png"/>
                 </HyperlinkButton.Background>
             </HyperlinkButton>
+            <Button x:Name="ZoomInBtn" Content="A+" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Style="{StaticResource ButtonPressedPink}" Click="ZoomInBtn_Click"/>
+            <Button x:Name="ZoomOutBtn" Content="a-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Margin="81,1,0,-1" Width="80" Style="{StaticResource ButtonPressedPink}" Click="ZoomOutBtn_Click"/>
+        </Grid>
+        <Grid x:Name="whiteGrid" HorizontalAlignment="Center" Height="800" VerticalAlignment="Center" Width="480" Background="White" Grid.RowSpan="2">
+        	<Button x:Name="PopCloseButton" Content="X" HorizontalAlignment="Left" Margin="410,0,0,0" VerticalAlignment="Top" BorderBrush="White" Foreground="Black" Width="70" Height="70" Style="{StaticResource ButtonPressedPink}" Click="PopCloseButton_Click"/>
+        	<ScrollViewer x:Name="PopScrollIntro" HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,95,0,0" Height="670" Width="400" >
+        		<Image x:Name="BGCanvas" Source="/IPAS App;component/Images/img_table_abort_m.png" Stretch="UniformToFill" Height="660"/>
+        	</ScrollViewer>
         </Grid>
     </Grid>
 

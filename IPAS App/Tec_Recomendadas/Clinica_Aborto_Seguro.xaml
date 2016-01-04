@@ -27,7 +27,7 @@
         </Grid>
         <ScrollViewer x:Name="Text_Grid" HorizontalAlignment="Left" Margin="45,49,0,0" Grid.Row="1" VerticalAlignment="Top" Height="554" Width="387">
 
-            <RichTextBox>
+            <RichTextBox x:Name="RTB1" FontSize="21">
             <Paragraph TextAlignment="Left" Foreground="Black">
                 <Run Text="La práctica clínica del aborto seguro" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FFEC098D" />
                 <LineBreak/>
@@ -91,6 +91,9 @@
                     <ImageBrush Stretch="Fill" ImageSource="/IPAS App;component/Images/pleca.png"/>
                 </HyperlinkButton.Background>
             </HyperlinkButton>
+            <Button x:Name="ZoomInBtn" Content="A+" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Style="{StaticResource ButtonPressedPink}" Click="ZoomInBtn_Click"/>
+            <Button x:Name="ZoomOutBtn" Content="a-" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Margin="81,1,0,-1" Width="80" Style="{StaticResource ButtonPressedPink}" Click="ZoomOutBtn_Click"/>
+
         </Grid>
 
     </Grid>

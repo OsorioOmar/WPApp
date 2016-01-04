@@ -79,6 +79,28 @@ namespace IPAS_App
             webBrowserTask.Uri = new Uri("http://www.who.int/reproductivehealth/publications/family_planning/Ex-Summ-MEC-5/en/", UriKind.Absolute);
             webBrowserTask.Show();
         }
+
+        private void ZoomInBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (RTB1.FontSize <= 23)
+            {
+                RTB1.FontSize += 1;
+                RTB2.FontSize += 1;
+                RTB3.FontSize += 1;
+                RTB4.FontSize += 1;
+            }
+        }
+
+        private void ZoomOutBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if (RTB1.FontSize >= 18)
+            {
+                RTB1.FontSize -= 1;
+                RTB2.FontSize -= 1;
+                RTB3.FontSize -= 1;
+                RTB4.FontSize -= 1;
+            }
+        }
         
     }
 }
